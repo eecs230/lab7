@@ -25,8 +25,10 @@ int main()
 
 }
 
-/* Creates two integer pointers named ptrA and ptrB that point to ints a and b, respectively.
- * Prints to terminal the values of the ints at the pointers. Then, prints to terminal the value of the ints at the pointer locations.*/
+/* Creates two integer pointers named ptrA and ptrB that point to ints a
+ * and b, respectively. Prints to terminal the values of the ints at the
+ * pointers. Then, prints to terminal the value of the ints at the
+ * pointer locations.*/
 void pointer_fun(int a, int b)
 {
     int* heapptr_a = new int(a);
@@ -42,9 +44,10 @@ void pointer_fun(int a, int b)
     cout << "dereferenced twice:\n";
     cout << "NOT_ALLOWED" << ' ' << "NOT_ALLOWED" << ' ' << **(heapptr_c) << "\n";
 
-    //follow-up question; how far away, in bytes, is location of ptrA versus location of ptrB? How many bytes is an int stored in?
+    //follow-up question; how far away, in bytes, is location of ptrA
+    //versus location of ptrB? How many bytes is an int stored in?
+    //
     //cout << "\n Int size (bytes): "<< sizeof(a) << endl;
-
 }
 
 void pointer_arithmetic_chars()
